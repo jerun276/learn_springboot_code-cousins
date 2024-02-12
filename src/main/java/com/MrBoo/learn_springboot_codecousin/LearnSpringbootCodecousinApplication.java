@@ -1,11 +1,17 @@
 package com.MrBoo.learn_springboot_codecousin;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@SpringBootApplication
+//@SpringBootApplication
+@EnableAutoConfiguration
+@Configuration
+@ComponentScan("com.MrBoo.learn_springboot_codecousin")
 @RestController
 public class LearnSpringbootCodecousinApplication {
 
